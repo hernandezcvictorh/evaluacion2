@@ -1,0 +1,67 @@
+public class Cuenta {
+
+    private String titular;
+    private String contraseña;
+    private int numero;
+    private int saldo;
+
+    Cuenta(String contraseña, int numero, int saldo) {
+
+        this.numero = numero;
+        this.contraseña = contraseña;
+        this.saldo = saldo;
+
+    }
+
+    public void Giro() {
+        int retiro = 0;
+
+        saldo = (saldo - retiro) - 300;
+
+    }
+
+    public void mostrarSaldo(){
+        
+        System.out.println("su saldo es: "+ saldo);
+    
+    }
+
+    public void deposito() {
+        int deposito = 0;
+        saldo = saldo + deposito;
+
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+}
