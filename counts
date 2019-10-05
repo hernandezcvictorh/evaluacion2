@@ -1,0 +1,23 @@
+public class counts {
+
+    public ArrayList<Cuenta> cuentas;
+
+    public counts() {
+
+        cuentas = new ArrayList<>();
+    }
+   
+   
+    public void addCuentas(){
+        
+    Cuenta cnt = new Cuenta( "123zxc" , 1 , 0);
+    cuentas.add(cnt);
+    Cuenta cnt1 = new Cuenta( "123asd" , 2 , 0);
+    cuentas.add(cnt1);
+    Cuenta cnt2 = new Cuenta( "123qwe" , 3 , 0);
+    cuentas.add(cnt2);
+    Cuenta cnt3 = new Cuenta( "zxc123" , 4 , 0);
+    cuentas.add(cnt3);
+    Cuenta cnt4 = new Cuenta( "zxc456" , 5 , 0);
+    cuentas.add(cnt4);
+}
