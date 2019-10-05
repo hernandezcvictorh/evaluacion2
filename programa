@@ -1,0 +1,41 @@
+public class programa {
+
+    public static void main(String[] args) {
+
+        Scanner leer = new Scanner(System.in);
+        String opc,opc2,ing,con;
+        counts cont = new counts();
+        do {
+            System.out.println("i: para ingresar");
+            System.out.println("s: para salir");
+            opc=leer.next();
+            switch (opc) {
+                
+                case "i":
+                    System.out.println("ingrese numero de cuenta");
+                    ing=leer.next();
+                    System.out.println("ingrese contraseña");
+                    con=leer.next();
+                    
+                    
+                    
+                    do {
+                        System.out.println("g: giro de dinero");
+                        System.out.println("d: hacer un deposito");
+                        System.out.println("m: mostrar saldo");
+                        System.out.println("s: salir");
+                        opc2=leer.next();
+                    }while(!opc2.equals("s"));                   
+                    break;
+                case "s":
+                    System.out.println("Adios");
+                    break;
+                default:
+                    System.out.println("valor ingresado no valido");
+                    break;
+            }
+        } while (!opc.equals("s"));
+
+    }
+
+}
